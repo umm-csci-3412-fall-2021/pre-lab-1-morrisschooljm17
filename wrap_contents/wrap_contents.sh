@@ -9,4 +9,4 @@ var_footer=$(find . -name "$2*_footer*")
 var_header=$(find . -name "$2*_header*")
 
 #Concatenates all into new file (third argument)
-cat $var_header $var_middle $var_footer > $3
+cat "$var_header" "$var_middle" "$var_footer" > "$3"
